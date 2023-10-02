@@ -1,1 +1,0 @@
-# escola-de-programadores
