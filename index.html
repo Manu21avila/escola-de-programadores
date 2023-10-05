@@ -127,34 +127,27 @@
         </section><!--portfolio-->
 
         <section class="form-container">
-            <div class="interface">
-                <h2 class="título">FALA <span>COMIGO.</span></h2>
-            </div>
             <div class="container">
-                <form action="#">
+                <form method="post" action="envia.php">
+                    <h2 class="título">ENTRE EM CONTATO</h2>
                     <p>Preencha o formilário abaixo e entraremos em contato com você!</p>
-                    <div class="input-sigle">
-                        <input type="text" name="" id="nome-box" class="input">
-                        <label for="nome-box">Seu nome completo:</label>
+                    <div class="input-single">
+                        <input class="input" type="text" id="nome" name="nome" required autocomplete="off">
+                        <label for="nome">Nome completo:</label>
                     </div><!--input-sigle- NOME -->
-
-                    <div class="input-sigle">
-                        <input type="text" name="" id="email-box" class="input">
-                        <label for="nome-box">Seu email:</label>
+                    <div class="input-single">
+                        <input class="input" type="text" id="email" name="email" required autocomplete="off">
+                        <label for="email">Email:</label>
                     </div><!--input-sigle - EMAIL -->
-
-                    <div class="input-sigle">
-                        <input type="text" name="" id="celular-box" class="input">
-                        <label for="nome-box">Seu celular:</label>
+                    <div class="input-single">
+                        <input class="input" type="text" id="celular" name="celular" required autocomplete="off">
+                        <label for="celular">Celular:</label>
                     </div><!--input-sigle - CELULAR -->
-
-                    <div class="input-sigle">
-                        <input type="text" name="" id="mensagem-box" class="input">
-                        <label for="nome-box">Sua mensagem:</label>
+                    <div class="input-single">
+                        <input class="input" type="text" id="mensagem" name="mensagem" required autocomplete="off">
+                        <label for="mensagem">Mensagem:</label>
                     </div><!--input-sigle - MENSAGEM-->
-
                     <div class="btn"><input type="submit" value="Enviar"></div>
-
                 </form><!--FORM ACTION-->
             </div><!-- CONTAINER -->
         </section><!-- FORM-CONTAINER -->
