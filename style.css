@@ -349,7 +349,7 @@ form .input-single .input:valid ~ label{
     color: #a1dcf0;
 }
 
-.btn{
+.btn-enviar{
     width: 100%;
     text-align: center;
 }
@@ -362,4 +362,44 @@ form input[type=submit]{
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+}
+
+/* PÁGINA OBRIGADA */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #283641;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #a1dcf0;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: #ffffff;
+    margin-bottom: 70px;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 40px;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #a2bcc5;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 8px #a2bcc5;
 }
