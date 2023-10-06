@@ -342,6 +342,16 @@ form p{
     border-radius: 20px;
 }
 
+.input-single textarea{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+    color: #fff;
+    margin: 0px 20px;
+}
+
 form .input-single .input:focus ~ label,
 form .input-single .input:valid ~ label{
     transform: translateY(-24px);
