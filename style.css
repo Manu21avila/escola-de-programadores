@@ -224,13 +224,13 @@ section.sobre .flex{
     font-size: 20px;
 }
 
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
+.btn-social button{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: none;
     background-color: #a1dcf0;
-    font-size: 22px;
+    font-size: 15px;
     cursor: pointer;
     margin: 0 05px;
     transition: .2s;
@@ -412,4 +412,34 @@ form input[type=submit]{
 
 .btn:hover{
     box-shadow: 0px 0px 8px #a2bcc5;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
+
+.borda{
+    border-top: 2px solid #a1dcf0;
+}
+
+footer .line-footer p i{
+    color: #a1dcf0;
+    font-size: 25px;
+    padding: 10px 05px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    font-size: 15px;
 }
