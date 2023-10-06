@@ -143,7 +143,7 @@
 
         <section class="form-container">
             <div class="container">
-                <form method="post" action="envia.php">
+                <form method="post" action="https://api.staticforms.xyz/submit">
                     <h2 class="título">ENTRE EM CONTATO</h2>
                     <p>Preencha o formilário abaixo e entraremos em contato com você!</p>
                     <div class="input-single">
@@ -162,8 +162,12 @@
                         <input class="input" type="text" id="mensagem" name="mensagem" required autocomplete="off">
                         <label for="mensagem">Mensagem:</label>
                     </div><!--input-sigle - MENSAGEM-->
-                    <div class="btn"><input type="submit" value="Enviar"></div>
+                    <div class="btn"><input type="submit" value="Enviar"></div><!--BOTÃO ENVIAR-->
+
+                    <input type="hidden" name="accessKey" value="b5f25119-6c1e-45d6-b7c2-f2fa5bcc5ee7">
+                    <input type="hidden" name="redirectTo" value="file:///C:/Users/manua/Documents/GitHub/escola-de-programadores/obrigado.html">
                 </form><!--FORM ACTION-->
+
             </div><!-- CONTAINER -->
         </section><!-- FORM-CONTAINER -->
 
