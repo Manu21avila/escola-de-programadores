@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- GOOGLE FONTES -->
     <!-- BOOTSTRAP ICONS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- FIM BOOTSTRAP ICONS -->
     <!--CSS-->
@@ -28,16 +29,13 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#topo-do-site">INÍCIO</a></li>
+                    <li><a href="#Especialidades">SKILLS</a></li>
+                    <li><a href="#img-sobre">SOBRE</a></li>
+                    <li><a href="#Portfólio">PORTFÓLIO</a></li>
                 </ul>
             </nav>
 
-            <div class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
         </div><!--interface-->
@@ -52,18 +50,18 @@
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.</p>
                         <!-- Sobre-mim -->
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://api.whatsapp.com/send?phone=5551999865636">
                                 <button>Entre em contato</button>
                             </a>
                         </div><!-- Entre-em-contato -->
                     </div><!-- txt-topo-site -->
 
                     <div class="img-topo-site"><!-- IMAGEM-PRINCIPAL -->
-                        <img width="300px" height="340" src="img/9.jpg" alt="Foto da Emanuelle Ávila">
+                        <img width="250px" height="290" src="img/9.jpg" alt="Foto da Emanuelle Ávila">
                     </div><!-- IMAGEM-PRINCIPAL -->
                 </div><!-- flex -->
             </div><!-- interface -->
-        </section><!-- topo-do-site -->
+        </section><!-- CABEÇALHO -->
 
         <section class="Especialidades">
             <div class="interface">
@@ -101,7 +99,7 @@
 
                 </div><!-- flex -->
             </div><!-- interface -->
-        </section><!-- especialidades -->    
+        </section><!-- ESPECIALIDADES -->    
 
         <section class="sobre">
             <div class="interface">
@@ -128,48 +126,39 @@
             <div class="interface">
                 <h2 class="título">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(img/12.png);">
+                    <div class="img-port" style="background-image: url(img/18.jpg);">
                         <div class="overlay">Projeto 1</div>
                     </div>
-                    <div class="img-port" style="background-image: url(img/13.jpg);">
+                    <div class="img-port" style="background-image: url(#)">
                         <div class="overlay">Projeto 2</div>
                     </div>
-                    <div class="img-port" style="background-image: url(img/14.png);">
+                    <div class="img-port" style="background-image: url(#);">
                         <div class="overlay">Projeto 3</div>
                     </div>
                 </div>
             </div><!--interface-->
-        </section><!--portfolio-->
+        </section><!--PORTFOLIO-->
 
         <section class="form-container">
             <div class="container">
                 <form method="post" action="https://api.staticforms.xyz/submit">
                     <h2 class="título">ENTRE EM CONTATO</h2>
                     <p>Preencha o formilário abaixo e entraremos em contato com você!</p>
-                    <div class="input-single">
-                        <input class="input" type="text" id="nome" name="nome" required autocomplete="off">
-                        <label for="nome">Nome completo:</label>
-                    </div><!--input-sigle- NOME -->
-                    <div class="input-single">
-                        <input class="input" type="text" id="email" name="email" required autocomplete="off">
-                        <label for="email">Email:</label>
-                    </div><!--input-sigle - EMAIL -->
-                    <div class="input-single">
-                        <input class="input" type="text" id="celular" name="celular" required autocomplete="off">
-                        <label for="celular">Celular:</label>
-                    </div><!--input-sigle - CELULAR -->
-                    <div class="input-single">
-                        <input class="input" type="text" id="mensagem" name="mensagem" required autocomplete="off">
-                        <label for="mensagem">Mensagem:</label>
-                    </div><!--input-sigle - MENSAGEM-->
-                    <div class="btn-enviar"><input type="submit" value="Enviar"></div><!--BOTÃO ENVIAR-->
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="Nome Completo" autocomplete="off" required>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email" autocomplete="off" required>
+                    <label>Telefone</label>
+                    <input type="text" name="telefone" placeholder="Telefone" autocomplete="off" required>
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" cols="30" rows="5" placeholder="Mensagem" autocomplete="off" required></textarea>
+                    <button type="submit">ENVIAR</button>
 
                     <input type="hidden" name="accessKey" value="b5f25119-6c1e-45d6-b7c2-f2fa5bcc5ee7">
                     <input type="hidden" name="redirectTo" value="http://127.0.0.1:3000/obrigado.html">
                 </form><!--FORM ACTION-->
             </div><!-- CONTAINER -->
-        </section><!-- FORM-CONTAINER -->
-
+        </section><!-- ENTRE EM CONTATO -->
     </main>
 
     <footer>
@@ -192,7 +181,7 @@
                 <p><i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5551999865636">(51) 9 9986-5636</a></p>
             </div><!--line-footer-->
         </div><!--interface-->
-    </footer>
-    
+    </footer><!--RODAPÉ-->
+
 </body>
 </html>

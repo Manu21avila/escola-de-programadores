@@ -23,13 +23,22 @@ body{
 
 .btn-contato button{
     padding: 10px 40px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
     background-color: #a1dcf0;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #a2bcc5;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #a1dcf0;
+    transform: scale(1.05);
 }
 
 h2.título{
@@ -43,11 +52,6 @@ h2.título span{
 
 }
 
-button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #a1dcf0;
-    transform: scale(1.05);
-}
-
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 30px 4%;
@@ -57,7 +61,7 @@ header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 header a{
@@ -94,54 +98,18 @@ section.topo-do-site .flex{
 
 .topo-do-site h1{
     color: #fff;
-    font-size: 48px;
-    line-height: 40px;
-}
-
-.topo-do-site .txt-topo-site h1 span{
-    color: #a1dcf0;
-    font-size: 98px;
-}
-
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 30px;
-    font-weight: 800;
-    background-color: #a2bcc5;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #a2bcc5;
-}
-
-/* ESTILO TOPO DO SITE */
-section.topo-do-site{
-    padding: 40px 4%;
-}
-
-section.topo-do-site .flex{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1{
-    color: #fff;
     font-size: 58px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span{
     color: #a2bcc5;
-    font-size: 148px;
+    font-size: 98px;
 }
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
-    margin: 40px 0;
+    margin: 40px 4%;
     font-size: 21px;
     text-align: justify;
 }
@@ -255,7 +223,8 @@ section.Portfólio .flex{
     transition: 6s;
     cursor: pointer;
     border-radius: 40px;
-    position: relative
+    position: relative;
+    background-color: #283641;
 }
 
 .img-port:hover{
@@ -286,19 +255,20 @@ section.Portfólio .flex{
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 .container{
-    max-width: 1280px;
+
     margin: 0 auto;
     padding: 80px 4%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 form{
     background-color: #242424;
-    max-width: 500px;
-    height: 500px;
-    padding: 40px;
+    width: 400px;
+    height: 550px;
+    padding: 30px;
     border-radius: 20px;
 }
 
@@ -315,13 +285,7 @@ form p{
     font-size: 20px;
 }
 
-.input-single{
-    position: relative;
-    margin: 30px 0;
-    color: #fff;
-}
-
-.input-single label{
+form label{
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -331,7 +295,8 @@ form p{
     margin: 0px 20px;
 }
 
-.input{
+form input, form textarea{
+    margin: 5px;
     width: 100%;
     border: 0;
     border-bottom: 2px solid #fff;
@@ -342,40 +307,22 @@ form p{
     border-radius: 20px;
 }
 
-.input-single textarea{
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    transition: all 0.2s;
-    cursor: text;
-    color: #fff;
-    margin: 0px 20px;
+form textarea{
+    resize: none;
 }
 
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label{
-    transform: translateY(-24px);
-    font-size: 15px;
-    color: #a1dcf0;
-}
-
-.btn-enviar{
-    width: 100%;
-    text-align: center;
-}
-
-form input[type=submit]{
-    padding: 10px 30px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #283641;
-    color: #fff;
+form button[type=submit]{
+    padding: 15px;
     cursor: pointer;
     font-size: 20px;
+    background-color: #283641;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 40px;
 }
 
 /* PÁGINA OBRIGADA */
-
 .main{
     display: flex;
     align-items: center;
@@ -415,7 +362,6 @@ form input[type=submit]{
 }
 
 /* ESTILO DO RODAPÉ */
-
 footer{
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
