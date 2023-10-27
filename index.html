@@ -29,10 +29,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#topo-do-site">INÍCIO</a></li>
-                    <li><a href="#Especialidades">SKILLS</a></li>
-                    <li><a href="#img-sobre">SOBRE</a></li>
-                    <li><a href="#Portfólio">PORTFÓLIO</a></li>
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#portfolio">PORTFÓLIO</a></li>
                 </ul>
             </nav>
 
@@ -42,7 +42,7 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section id="inicio" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -50,7 +50,7 @@
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.</p>
                         <!-- Sobre-mim -->
                         <div class="btn-contato">
-                            <a href="https://api.whatsapp.com/send?phone=5551999865636">
+                            <a href="https://api.whatsapp.com/send?phone=5551999865636" target="_blank">
                                 <button>Entre em contato</button>
                             </a>
                         </div><!-- Entre-em-contato -->
@@ -63,7 +63,7 @@
             </div><!-- interface -->
         </section><!-- CABEÇALHO -->
 
-        <section class="Especialidades">
+        <section id="skills" class="Especialidades">
             <div class="interface">
                 <h2 class="título">MINHAS <span>SKILLS.</span></h2>
                 <div class="flex">
@@ -101,7 +101,7 @@
             </div><!-- interface -->
         </section><!-- ESPECIALIDADES -->    
 
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -112,17 +112,17 @@
                         <p>Tenho 20 anos de idade, moro em Porto Alegre, capital do Rio Grande do Sul.</p>
                         <p>Sou formada em Técnico de Administração e acadêmica de Análise e Desenvolvimento de Dados na faculdade Uníntese onde estou iniciando no ramo de programação em busca de avanço na área profissional.</p>
                         <div class="btn-social">
-                            <a href="https://github.com/Manu21avila"><button><i class="bi bi-github"></i></i></button></a>
-                            <a href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://www.instagram.com/manu_avila.21/"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.facebook.com/emanuelle.avila.21"><button><i class="bi bi-facebook"></i></button></a>
+                            <a href="https://github.com/Manu21avila" target="_blank"><button><i class="bi bi-github"></i></i></button></a>
+                            <a href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/manu_avila.21/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.facebook.com/emanuelle.avila.21" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--TXT-SOBRE-->
                 </div><!--FLEX-->
             </div><!-- INTERFACE -->
         </section><!-- SOBRE -->   
         
-        <section class="Portfólio">
+        <section id="portfolio" class="Portfólio">
             <div class="interface">
                 <h2 class="título">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -144,18 +144,30 @@
                 <form method="post" action="https://api.staticforms.xyz/submit">
                     <h2 class="título">ENTRE EM CONTATO</h2>
                     <p>Preencha o formilário abaixo e entraremos em contato com você!</p>
-                    <label>Nome</label>
-                    <input type="text" name="nome" placeholder="Nome Completo" autocomplete="off" required>
-                    <label>Email</label>
-                    <input type="text" name="email" placeholder="Email" autocomplete="off" required>
-                    <label>Telefone</label>
-                    <input type="text" name="telefone" placeholder="Telefone" autocomplete="off" required>
-                    <label>Mensagem</label>
-                    <textarea name="mensagem" cols="30" rows="5" placeholder="Mensagem" autocomplete="off" required></textarea>
-                    <button type="submit">ENVIAR</button>
+                    <div class="input-single">
+                        <input type="text" id="nome-box" class="input" autocomplete="off" required>
+                        <label for="nome-box">Nome Completo</label>
+                    </div>
 
-                    <input type="hidden" name="accessKey" value="b5f25119-6c1e-45d6-b7c2-f2fa5bcc5ee7">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:3000/obrigado.html">
+                    <div class="input-single">
+                        <input type="text" id="email-box" class="input" autocomplete="off" required>
+                        <label for="email-box">Email</label>
+                    </div>
+
+                    <div class="input-single">
+                        <input type="text" id="telefone-box" class="input" autocomplete="off" required>
+                        <label for="telefone-box">Telefone</label>
+                    </div>
+
+                    <div class="input-single">
+                        <textarea cols="30" rows="1" id="mensagem-box" class="input" autocomplete="off" required></textarea>
+                        <label for="mensagem-box">Mensagem</label>
+                    </div>
+
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+
+                        <input type="hidden" name="accessKey" value="b5f25119-6c1e-45d6-b7c2-f2fa5bcc5ee7">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:3000/obrigado.html">
                 </form><!--FORM ACTION-->
             </div><!-- CONTAINER -->
         </section><!-- ENTRE EM CONTATO -->
@@ -169,16 +181,16 @@
                         <img width="130px" height="130" src="img/7.jpg" alt="Logotipo Emanuelle Ávila">
                     </div><!--logo-footer-->
                     <div class="btn-social">
-                        <a href="https://github.com/Manu21avila"><button><i class="bi bi-github"></i></i></button></a>
-                        <a href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://www.instagram.com/manu_avila.21/"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.facebook.com/emanuelle.avila.21"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://github.com/Manu21avila" target="_blank"><button><i class="bi bi-github"></i></i></button></a>
+                        <a href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.instagram.com/manu_avila.21/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.facebook.com/emanuelle.avila.21" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
                     </div><!--btn-social-->
                 </div>
             </div><!--line-footer-->
             <div class="line-footer borda">
-                <p><i class="bi bi-envelope"></i> <a href="mailto:emanuelle.flash@gmail.com">emanuelle.flash@gmail.com</a></p>
-                <p><i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5551999865636">(51) 9 9986-5636</a></p>
+                <p><i class="bi bi-envelope"></i> <a href="mailto:emanuelle.flash@gmail.com" target="_blank">emanuelle.flash@gmail.com</a></p>
+                <p><i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5551999865636"target="_blank">(51) 9 9986-5636</a></p>
             </div><!--line-footer-->
         </div><!--interface-->
     </footer><!--RODAPÉ-->

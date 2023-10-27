@@ -12,6 +12,8 @@ body{
     height: 100vh;
 }
 
+
+
 .interface{
     max-width: 1280px;
     margin: 0 auto;
@@ -130,7 +132,7 @@ section.topo-do-site .flex{
 
 /* ESTILO DAS ESPECIALIDADES */
 section .Especialidades{
-    padding: 60px 4%;
+    padding:90px 4%;
 }
 
 section.Especialidades .flex{
@@ -254,22 +256,26 @@ section.Portfólio .flex{
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
-.container{
-
-    margin: 0 auto;
-    padding: 80px 4%;
+.form-container{
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+.container{
+    padding: 80px 4%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form{
-    background-color: #242424;
-    width: 400px;
-    height: 550px;
+    background-color: #1c2125;
+    max-width: 550px;
+    height: 500px;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 form h2{
@@ -278,48 +284,62 @@ form h2{
     color: #a1dcf0;
 }
 
-form p{
+form p{ 
     text-align: center;
     margin: 20px 0;
+    margin-top: 10px;
     color: #a1dcf0;
     font-size: 20px;
 }
 
-form label{
+.input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-single label{
     position: absolute;
     left: 0;
     bottom: 5px;
-    transition: all 0.2s;
-    cursor: text;
     color: #fff;
-    margin: 0px 20px;
+    margin: 08px;
+    transition: all 0.3s;
+    cursor: text;
 }
 
-form input, form textarea{
-    margin: 5px;
+.input{
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #fff;
-    padding: 5px;
-    font-size: 20px;
-    outline: 0;
+    border-bottom: 2px solid #a2bcc5;
+    padding: 7px;
+    font-size: 18px;
     background-color: #283641;
-    border-radius: 20px;
-}
-
-form textarea{
+    border-radius: 15px;
+    color: #fff;
+    outline: none;
     resize: none;
 }
 
-form button[type=submit]{
-    padding: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #283641;
-    color: #fff;
-    border-radius: 10px;
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 14px;
+    color: #a1dcf0;
+}
+
+.btn-enviar{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
     border: 0;
-    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #a2bcc5;
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 /* PÁGINA OBRIGADA */
