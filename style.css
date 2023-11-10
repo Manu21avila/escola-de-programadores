@@ -75,7 +75,7 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
 }
@@ -84,9 +84,72 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
+}
+
+/* ESTILO MENU MOBILE */
+.btn-abrir-menu i{
+    color: #a1dcf0;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #283641;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar{
+    color: #a1dcf0;
+    font-size: 38px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #a2bcc5;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
 
 /* ESTILO TOPO DO SITE */
@@ -413,6 +476,31 @@ footer .line-footer p a {
     font-size: 15px;
 }
 
+#voltar-topo button {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    background-color: #a1dcf0;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#voltar-topo button:hover {
+    box-shadow: 0px 0px 8px #a2bcc5;
+}
+
+button:hover,
+form #voltar-topo input:hover {
+    box-shadow: 0px 0px 8px #a1dcf0;
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 1296px) {
 
     /* CLASSES GERAIS */
@@ -450,6 +538,14 @@ footer .line-footer p a {
     /* ESTILO DAS ESPECIALIDADES */
     section .Especialidades {
         padding: 40px 8%;
+    }
+
+    .Especialidades .especialidades-box i {
+        font-size: 60px;
+    }
+    
+    .Especialidades .especialidades-box h3 {
+        font-size: 23px;
     }
 
     /* ESTILO DO SOBRE */
